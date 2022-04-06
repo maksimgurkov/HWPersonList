@@ -19,8 +19,10 @@ class TapBarViewController: UITabBarController {
     private func passingViewController() {
         let persone = Person.dataPerson()
         let personListVC = viewControllers?.first as! PersonListViewController
+        let generalListVC = viewControllers?.last as! GeneralListViewController
         
         personListVC.persons = persone
+        generalListVC.persons = persone
 
 
 

@@ -21,7 +21,7 @@ class DataManager {
         "Steven",
         "Carl"
     ]
-    let surnames: [String] = [
+    let surnames = [
         "Ivanov",
         "Petrov",
         "Sidorov",
@@ -33,7 +33,7 @@ class DataManager {
         "Sorokin",
         "Smirnov"
     ]
-    let phons: [String] = [
+    let phons = [
         "8(999)0000000",
         "8(111)1111111",
         "8(222)2222222",
@@ -45,7 +45,7 @@ class DataManager {
         "8(888)88888888",
         "8(000)99999999"
     ]
-    let emails: [String] = [
+    let emails = [
         "zzzzz@mail.com",
         "xxxxx@mail.com",
         "ccccc@mail.com",

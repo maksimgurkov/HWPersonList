@@ -12,15 +12,15 @@ class GeneralListViewController: UITableViewController {
     var persons: [Person] = []
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return persons.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return persons[section].nameAndSurname
+        persons[section].nameAndSurname
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,5 +38,9 @@ class GeneralListViewController: UITableViewController {
         cell.contentConfiguration = content
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
